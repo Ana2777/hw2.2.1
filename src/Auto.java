@@ -21,6 +21,6 @@ System.out.println("Объем двигателя - " + engineCapacityInLiters +
 System.out.println("Цвет кузова - " + color);
 System.out.println("Год производства - " + yearOfProduction);
 System.out.println("Страна производства - " + countryOfAssembly);
-System.out.println("   ");
+System.out.println("  ");
     }
 }

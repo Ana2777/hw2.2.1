@@ -10,5 +10,6 @@ Auto kia = new Auto("Kia", "Sportage 4 поколение", 2.4, "Красный
 kia.cars();
 Auto hyundai = new Auto("Hyundai", "Avante", 1.6, "Оранжевый",2016, "Южная Корея");
 hyundai.cars();
+
     }
 }
