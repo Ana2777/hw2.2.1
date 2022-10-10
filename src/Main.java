@@ -1,15 +1,26 @@
 public class Main {
     public static void main(String[] args) {
-Auto lada = new Auto("Lada", "Grande", 1.7, "Желтый", 2015, "Россия");
+Auto lada = new Auto("Lada", "Grande", "Желтый", 2015, "Россия", 1.7, "Зеленый","Нейизветсно", "56оал26п7", 4, "Зима");
 lada.cars();
-Auto audi = new Auto("Audi", "A8 50 L TDI quattro", 3.0, "Черный", 2020, "Германия");
+Auto audi = new Auto("Audi", "A8 50 L TDI quattro", "Черный", 2020, "Германия", 3.0,"Черный", "Нейизветсно", "45рлв36р4", 0,"Лето");
 audi.cars();
-Auto bmw = new Auto("BMW", "Z8", 3.0, "Черный", 2021, "Германия");
+Auto bmw = new Auto("BMW", "Z8", "Черный", 2021, "Германия", 3.0,  "Черный", "Нейизветсно","458пов546п", 2, "Лето");
 bmw.cars();
-Auto kia = new Auto("Kia", "Sportage 4 поколение", 2.4, "Красный", 2018, "Южная Корея");
+Auto kia = new Auto("Kia", "Sportage 4 поколение", "Красный", 2018, "Южная Корея", 2.4,  "Красный", "Нейизветсно","46п1вп25п", 6, "Зима");
 kia.cars();
-Auto hyundai = new Auto("Hyundai", "Avante", 1.6, "Оранжевый",2016, "Южная Корея");
+Auto hyundai = new Auto("Hyundai", "Avante", "Оранжевый",2016, "Южная Корея", 1.6, "Оранжевый", "Нейизветсно", "пп468п32а", 5, "Зима");
 hyundai.cars();
 //
+
+ train one = new train("«Ласточка»", " B-901", "Зеленый", 2011, "Россия",301,3500, 6.00, "Белорусский вокзал","Минск-Пассажирский",11);
+ train two = new train("«Ленинград»", "D-125", "Синий",2019, "Россия",270, 1700,5.30, "Ленинградский вокзал", "Ленинград-Пассажирский", 8);
+        one.poezd();
+        two.poezd();
+
+        Avtobus one1 = new Avtobus("Марка 1", "Модель 15", "Красный", 2021, "Россия", 350);
+        Avtobus two2 = new Avtobus("Марка 2", "Модель 3", "Желтый", 2020, "Китай", 150);
+        one1.bus();
+        two2.bus();
     }
+
 }

@@ -1,30 +1,20 @@
 import java.time.LocalDate;
 
-class Auto {
+class Auto extends transport{
     private String mark;
     private String model;
     private Double engineCapacityInLiters;
-    private
-    String color;
+    private String color;
     private int yearOfProduction;
     private String countryOfAssembly;
     private String transmission;
     private String bodyType;
     private String registrationNumber;
     private int numberOfSeats;
-    private Boolean theSignOfSummerOrWinterTires;
+    private String theSignOfSummerOrWinterTires;
 
-    public Auto(String mark, String model, Double engineCapacityInLiters, String color, int yearOfProduction, String countryOfAssembly, String transmission, String bodyType, String registrationNumber, int numberOfSeats, Boolean theSignOfSummerOrWinterTires) {
-        if (mark == null || mark.isBlank() || mark.isEmpty()) {
-            this.mark = "default";
-        } else {
-            this.mark = mark;
-        }
-        if (model == null || model.isBlank() || model.isEmpty()) {
-            this.model = "default";
-        } else {
-            this.model = model;
-        }
+    public Auto(String mark, String model, String bodyType, int yearOfProduction, String countryOfAssembly, Double engineCapacityInLiters, String color, String transmission, String registrationNumber, int numberOfSeats, String theSignOfSummerOrWinterTires) {
+        super(mark, model, bodyType, yearOfProduction, countryOfAssembly);
         if (engineCapacityInLiters == 0) {
             this.engineCapacityInLiters = 1.5;
         } else {
@@ -35,25 +25,10 @@ class Auto {
         } else {
             this.color = color;
         }
-        if (yearOfProduction == 0) {
-            this.yearOfProduction = 2000;
-        } else {
-            this.yearOfProduction = yearOfProduction;
-        }
-        if (countryOfAssembly == null || countryOfAssembly.isBlank() || countryOfAssembly.isEmpty()) {
-            this.countryOfAssembly = "default";
-        } else {
-            this.countryOfAssembly = countryOfAssembly;
-        }
         if (transmission == null || transmission.isBlank() || transmission.isEmpty()) {
             this.transmission = "default";
         } else {
             this.transmission = transmission;
-        }
-        if (bodyType == null || bodyType.isBlank() || bodyType.isEmpty()) {
-            this.bodyType = "default";
-        } else {
-            this.bodyType = bodyType;
         }
         if (registrationNumber == null || registrationNumber.isBlank() || registrationNumber.isEmpty()) {
             this.registrationNumber = "default";
@@ -66,7 +41,7 @@ class Auto {
             this.numberOfSeats = numberOfSeats;
         }
         this.theSignOfSummerOrWinterTires = theSignOfSummerOrWinterTires;
-    }
+}
 
     public String getMark() {
         return mark;
@@ -148,11 +123,11 @@ class Auto {
         this.numberOfSeats = numberOfSeats;
     }
 
-    public Boolean getTheSignOfSummerOrWinterTires() {
+    public String getTheSignOfSummerOrWinterTires() {
         return theSignOfSummerOrWinterTires;
     }
 
-    public void setTheSignOfSummerOrWinterTires(Boolean theSignOfSummerOrWinterTires) {
+    public void setTheSignOfSummerOrWinterTires(String theSignOfSummerOrWinterTires) {
         this.theSignOfSummerOrWinterTires = theSignOfSummerOrWinterTires;
     }
 
@@ -167,7 +142,7 @@ class Auto {
     }
 
     public void changingTires() {
-        this.theSignOfSummerOrWinterTires = !theSignOfSummerOrWinterTires;
+
     }
 
     public boolean checkNamber() {
@@ -213,8 +188,6 @@ private boolean keylessccess;
             this.periodCost = periodCost;
             this.numberS = numberS;
         }
-
-
 
     }
 
