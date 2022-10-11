@@ -12,6 +12,11 @@ public class Avtobus extends transport{
         System.out.println("Максимальная скорость - " + getMaximumMovementSpeed());
         System.out.println("   ");
     }
+
+    @Override
+    public void refill() {
+        System.out.println("Можно заправлять бензином или дизелем на заправке.");
+    }
 }
 
 

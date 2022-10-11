@@ -13,6 +13,11 @@ class Auto extends transport{
     private int numberOfSeats;
     private String theSignOfSummerOrWinterTires;
 
+    @Override
+    public void refill() {
+        System.out.println("Можно заправлять бензином, дизелем на заправке или заряжать на специальных электропарковках, если это электрокар.");
+    }
+
     public Auto(String mark, String model, String bodyType, int yearOfProduction, String countryOfAssembly, Double engineCapacityInLiters, String color, String transmission, String registrationNumber, int numberOfSeats, String theSignOfSummerOrWinterTires) {
         super(mark, model, bodyType, yearOfProduction, countryOfAssembly);
         if (engineCapacityInLiters == 0) {

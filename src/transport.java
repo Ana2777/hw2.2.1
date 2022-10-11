@@ -36,6 +36,7 @@ public abstract class transport {
         setBodyType(bodyType);
         setMaximumMovementSpeed(maximumMovementSpeed);
     }
+public abstract void refill();
 
     public void setMark(String mark) {
         if (mark == null || mark.isEmpty() || mark.isBlank()) {
@@ -163,9 +164,12 @@ public void poezd(){
     System.out.println("Станция прибытия - " + getFinalStop());
     System.out.println("Количество вагонов - " + getNumberOfWagons());
 System.out.println("   ");
-
-
 }
 
+    @Override
+    public void refill() {
+        System.out.println("Нужно заправлять дизелем");
+
+    }
 }
 
