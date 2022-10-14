@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-class Auto extends transport{
+class Auto extends Transport{
     private String mark;
     private String model;
     private Double engineCapacityInLiters;
@@ -13,7 +13,7 @@ class Auto extends transport{
     private int numberOfSeats;
     private String theSignOfSummerOrWinterTires;
 
-    @Override
+
     public void refill() {
         System.out.println("Можно заправлять бензином, дизелем на заправке или заряжать на специальных электропарковках, если это электрокар.");
     }

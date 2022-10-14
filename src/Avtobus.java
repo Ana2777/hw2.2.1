@@ -1,4 +1,4 @@
-public class Avtobus extends transport{
+public class Avtobus extends Transport{
     public Avtobus(String mark, String model, String bodyType, int yearOfProduction, String countryOfAssembly, int maximumMovementSpeed) {
         super(mark, model, bodyType, yearOfProduction, countryOfAssembly, maximumMovementSpeed);
     }
@@ -13,9 +13,17 @@ public class Avtobus extends transport{
         System.out.println("   ");
     }
 
-    @Override
+
     public void refill() {
         System.out.println("Можно заправлять бензином или дизелем на заправке.");
+    }
+    public void startMovement(){
+        System.out.println("Начало движения");
+
+    }
+    public void endMovement(){
+        System.out.println("Конец движения");
+
     }
 }
 
