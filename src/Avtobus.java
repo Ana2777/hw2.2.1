@@ -1,4 +1,4 @@
-public class Avtobus extends Transport{
+public class Avtobus extends Transport implements Competing{
     public Avtobus(String mark, String model, String bodyType, int yearOfProduction, String countryOfAssembly, int maximumMovementSpeed) {
         super(mark, model, bodyType, yearOfProduction, countryOfAssembly, maximumMovementSpeed);
     }
@@ -13,6 +13,20 @@ public class Avtobus extends Transport{
         System.out.println("   ");
     }
 
+    @Override
+    public void pitStop() {
+        System.out.println("Останавливается каждые 3 круга");
+    }
+
+    @Override
+    public void bestLapTime() {
+        System.out.println("Лучшее время прохождения круга 2 минуты");
+    }
+
+    @Override
+    public void maximumSpeed() {
+        System.out.println("Максимальная скорость 150");
+    }
 
     public void refill() {
         System.out.println("Можно заправлять бензином или дизелем на заправке.");
