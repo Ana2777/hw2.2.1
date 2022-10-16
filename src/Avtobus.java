@@ -39,6 +39,7 @@ public class Avtobus extends Transport implements Competing{
         System.out.println("Конец движения");
 
     }
+
 }
 
 

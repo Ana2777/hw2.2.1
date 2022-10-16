@@ -61,6 +61,17 @@ valday.endMovement();
         gazel.startMovement();
         gazel.endMovement();
 
-    }
 
+        DriverB alex = new DriverB("Алекс", "В", 3, ford);
+alex.categoryB();
+System.out.print("Управляет ");
+ford.description();
+        DriverC valera = new DriverC("Валера", "C", 4, kamaz);
+valera.categoryC();
+        System.out.print("Управляет ");
+        kamaz.descript();
+        DriverD maks = new DriverD("Макс", "D", 7, one1);
+        maks.categoryD();
+        System.out.print("Управляет "); one1.bus();
+    }
 }
