@@ -35,7 +35,7 @@ private A car;
     public void setExperience(int experience) {
         this.experience = experience;
     }
-
+//
     public abstract void startMoving();
 
   public  abstract void stop();

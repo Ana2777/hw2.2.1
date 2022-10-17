@@ -61,7 +61,7 @@ valday.endMovement();
         gazel.descript();
         gazel.startMovement();
         gazel.endMovement();
-
+//
 
         DriverB alex = new DriverB("Алекс", "В", 3, ford);
 alex.category();

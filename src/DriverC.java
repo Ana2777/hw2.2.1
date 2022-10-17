@@ -9,7 +9,7 @@ public class DriverC extends Driver<Truck>{
         System.out.println("Категория водительских прав - " + getDriverLicense());
         System.out.println("Стаж - " + getExperience());
     }
-
+///
     @Override
     public void startMoving() {
         System.out.println("Начать движение");
