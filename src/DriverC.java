@@ -3,7 +3,8 @@ public class DriverC extends Driver<Truck>{
         super(fio, driverLicense, experience, car);
     }
 
-    void categoryC(){
+    @Override
+    public void category() {
         System.out.println("Имя - " + getFio());
         System.out.println("Категория водительских прав - " + getDriverLicense());
         System.out.println("Стаж - " + getExperience());

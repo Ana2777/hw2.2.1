@@ -7,7 +7,11 @@ public abstract class Transport {
     private int maximumMovementSpeed;
     private int engineCapacity;
 
-    public Transport(String mark, String model, String bodyType, int yearOfProduction, String countryOfAssembly,  int maximumMovementSpeed) {
+    public Transport(String bodyType) {
+        this.bodyType = bodyType;
+    }
+
+    public Transport(String mark, String model, String bodyType, int yearOfProduction, String countryOfAssembly, int maximumMovementSpeed) {
         this.mark = mark;
         this.model = model;
         this.yearOfProduction = yearOfProduction;

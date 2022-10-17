@@ -3,7 +3,8 @@ public class DriverD extends Driver <Avtobus>{
         super(fio, driverLicense, experience, car);
     }
 
-    void categoryD(){
+    @Override
+    public void category() {
         System.out.println("Имя - " + getFio());
         System.out.println("Категория водительских прав - " + getDriverLicense());
         System.out.println("Стаж - " + getExperience());

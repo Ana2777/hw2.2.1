@@ -40,5 +40,6 @@ private A car;
 
   public  abstract void stop();
 public abstract void refuelTheCar();
+    public abstract void category();
 
 }

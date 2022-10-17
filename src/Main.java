@@ -44,6 +44,7 @@ public class Main {
         ford.endMovement();
         ford.startMovement();
 
+
 Truck valday = new Truck("valday", "Модель valday",30);
 valday.descript();
 valday.startMovement();
@@ -63,15 +64,15 @@ valday.endMovement();
 
 
         DriverB alex = new DriverB("Алекс", "В", 3, ford);
-alex.categoryB();
+alex.category();
 System.out.print("Управляет ");
 ford.description();
         DriverC valera = new DriverC("Валера", "C", 4, kamaz);
-valera.categoryC();
+valera.category();
         System.out.print("Управляет ");
         kamaz.descript();
         DriverD maks = new DriverD("Макс", "D", 7, one1);
-        maks.categoryD();
+        maks.category();
         System.out.print("Управляет "); one1.bus();
     }
 }
