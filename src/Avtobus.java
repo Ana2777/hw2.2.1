@@ -2,7 +2,11 @@ public class Avtobus extends Transport implements Competing{
     public Avtobus(String mark, String model, String bodyType, int yearOfProduction, String countryOfAssembly, int maximumMovementSpeed) {
         super(mark, model, bodyType, yearOfProduction, countryOfAssembly, maximumMovementSpeed);
     }
+    public enum BodyType {SEDAN, HATCHBACK, Coupe, STASION_WAGON, SUV, CROSSOVER, PICKUP_TRUCK, VAN, MINIVAN
 
+
+
+    }
     void bus(){
         System.out.println("Название - " + getMark());
         System.out.println("Модель - " + getModel());

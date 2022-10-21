@@ -26,7 +26,7 @@ public class Truck extends Transport implements Competing{
         System.out.println("Конец движения");
     }
 
-    void descript() {
+    public void description() {
         System.out.println("Название - " + getMark());
         System.out.println("Модель - " + getModel());
         System.out.println("Обьем двигателя - "+ getEngineCapacity());

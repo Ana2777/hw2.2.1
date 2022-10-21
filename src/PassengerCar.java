@@ -3,6 +3,11 @@ public class PassengerCar extends Transport implements Competing{
         super(mark, model, engineCapacity);
     }
 
+    public PassengerCar(String bodyType) {
+        super(bodyType);
+    }
+
+
     @Override
     public void pitStop() {
         System.out.println("Останавливается каждый 1 круг");
@@ -27,7 +32,7 @@ public class PassengerCar extends Transport implements Competing{
         System.out.println("Конец движения");
     }
 
-    void description() {
+    public void description() {
         System.out.println("Название - " + getMark());
         System.out.println("Модель - " + getModel());
         System.out.println("Обьем двигателя - "+ getEngineCapacity());

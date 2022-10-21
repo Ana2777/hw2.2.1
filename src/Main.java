@@ -45,20 +45,20 @@ public class Main {
         ford.startMovement();
 
 
-Truck valday = new Truck("valday", "Модель valday",30);
-valday.descript();
-valday.startMovement();
-valday.endMovement();
+        Truck valday = new Truck("valday", "Модель valday",30);
+        valday.description();
+        valday.startMovement();
+        valday.endMovement();
         Truck sunray = new Truck("sunray", "Модель sunray", 15);
-        sunray.descript();
+        sunray.description();
         sunray.startMovement();
         sunray.endMovement();
         Truck kamaz = new Truck("kamaz", "Модель kamaz", 45);
-        kamaz.descript();
+        kamaz.description();
         kamaz.startMovement();
         kamaz.endMovement();
         Truck gazel = new Truck("gazel", "Модель gazel", 22);
-        gazel.descript();
+        gazel.description();
         gazel.startMovement();
         gazel.endMovement();
 //
@@ -70,7 +70,7 @@ ford.description();
         DriverC valera = new DriverC("Валера", "C", 4, kamaz);
 valera.category();
         System.out.print("Управляет ");
-        kamaz.descript();
+        kamaz.description();
         DriverD maks = new DriverD("Макс", "D", 7, one1);
         maks.category();
         System.out.print("Управляет "); one1.bus();
