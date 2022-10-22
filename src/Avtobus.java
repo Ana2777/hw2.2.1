@@ -1,12 +1,18 @@
 public class Avtobus extends Transport implements Competing{
-    public Avtobus(String mark, String model, String bodyType, int yearOfProduction, String countryOfAssembly, int maximumMovementSpeed) {
+    private TypeOfCapacity typeOfCapacity;
+    public Avtobus(String mark, String model, String bodyType, int yearOfProduction, String countryOfAssembly, int maximumMovementSpeed, TypeOfCapacity typeOfCapacity) {
         super(mark, model, bodyType, yearOfProduction, countryOfAssembly, maximumMovementSpeed);
+    this.typeOfCapacity = typeOfCapacity;
     }
-    public enum BodyType {SEDAN, HATCHBACK, Coupe, STASION_WAGON, SUV, CROSSOVER, PICKUP_TRUCK, VAN, MINIVAN
 
-
-
+    public TypeOfCapacity getTypeOfCapacity() {
+        return typeOfCapacity;
     }
+
+    public void setTypeOfCapacity(TypeOfCapacity typeOfCapacity) {
+        this.typeOfCapacity = typeOfCapacity;
+    }
+
     void bus(){
         System.out.println("Название - " + getMark());
         System.out.println("Модель - " + getModel());
@@ -44,6 +50,10 @@ public class Avtobus extends Transport implements Competing{
 
     }
 
+    @Override
+    public void description() {
+        System.out.println("Автобус");
+    }
 }
 
 

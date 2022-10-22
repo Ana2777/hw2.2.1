@@ -1,6 +1,15 @@
 public class PassengerCar extends Transport implements Competing{
-    public PassengerCar(String mark, String model, int engineCapacity) {
+    private BodyOfType bodyOfType;
+    public PassengerCar(String mark, String model, int engineCapacity, BodyOfType bodyOfType) {
         super(mark, model, engineCapacity);
+    }
+
+    public BodyOfType getBodyOfType() {
+        return bodyOfType;
+    }
+
+    public void setBodyOfType(BodyOfType bodyOfType) {
+        this.bodyOfType = bodyOfType;
     }
 
     public PassengerCar(String bodyType) {

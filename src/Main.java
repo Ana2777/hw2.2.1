@@ -17,47 +17,47 @@ public class Main {
      //   one.poezd();
       //  two.poezd();
 
-        Avtobus one1 = new Avtobus("Марка 1", "Модель 15", "Красный", 2021, "Россия", 350, BodyType.VAN);
-        Avtobus two2 = new Avtobus("Марка 2", "Модель 3", "Желтый", 2020, "Китай", 150);
-        Avtobus three3 = new Avtobus("Марка 3", "Модель 3","Зеленый", 2015, "Корея", 230);
-        Avtobus four4 = new Avtobus("Марка 4", "Модель 4", "Фиолетовый", 2022, "Россия", 300);
+        Avtobus one1 = new Avtobus("Марка 1", "Модель 15", "Красный", 2021, "Россия", 350, TypeOfCapacity.AVERAGE);
+        Avtobus two2 = new Avtobus("Марка 2", "Модель 3", "Желтый", 2020, "Китай", 150, TypeOfCapacity.SMALL);
+        Avtobus three3 = new Avtobus("Марка 3", "Модель 3","Зеленый", 2015, "Корея", 230, TypeOfCapacity.ESPECIALLY_LARGE);
+        Avtobus four4 = new Avtobus("Марка 4", "Модель 4", "Фиолетовый", 2022, "Россия", 300, TypeOfCapacity.LARGE);
         one1.bus();
         two2.bus();
         three3.bus();
         four4.bus();
 
 
-        PassengerCar cadilak = new PassengerCar("cadilak", "Модель cadilak", 40, BodyType.SUV);
+        PassengerCar cadilak = new PassengerCar("cadilak", "Модель cadilak", 40, BodyOfType.COUPE);
         cadilak.description();
         cadilak.endMovement();
         cadilak.startMovement();
-        PassengerCar chevrolet = new PassengerCar("chevrolet", "Модель chevrolet", 20, BodyType.MINIVAN);
+        PassengerCar chevrolet = new PassengerCar("chevrolet", "Модель chevrolet", 20, BodyOfType.SEDAN);
         chevrolet.description();
         chevrolet.endMovement();
         chevrolet.startMovement();
-        PassengerCar hummer = new PassengerCar("hummer", "Модель hummer", 30, BodyType.COUPE);
+        PassengerCar hummer = new PassengerCar("hummer", "Модель hummer", 30, BodyOfType.HATCHBACK);
         hummer.description();
         hummer.endMovement();
         hummer.startMovement();
-        PassengerCar ford = new PassengerCar("ford", "Модель ford", 10, BodyType.STASION_WAGON);
+        PassengerCar ford = new PassengerCar("ford", "Модель ford", 10, BodyOfType.MINIVAN);
         ford.description();
         ford.endMovement();
         ford.startMovement();
 
 
-        Truck valday = new Truck("valday", "Модель valday",30);
+        Truck valday = new Truck("valday", "Модель valday",30, TypeOfLoadCapacity.N1);
         valday.description();
         valday.startMovement();
         valday.endMovement();
-        Truck sunray = new Truck("sunray", "Модель sunray", 15);
+        Truck sunray = new Truck("sunray", "Модель sunray", 15, TypeOfLoadCapacity.N2);
         sunray.description();
         sunray.startMovement();
         sunray.endMovement();
-        Truck kamaz = new Truck("kamaz", "Модель kamaz", 45);
+        Truck kamaz = new Truck("kamaz", "Модель kamaz", 45, TypeOfLoadCapacity.N3);
         kamaz.description();
         kamaz.startMovement();
         kamaz.endMovement();
-        Truck gazel = new Truck("gazel", "Модель gazel", 22);
+        Truck gazel = new Truck("gazel", "Модель gazel", 22, TypeOfLoadCapacity.N1);
         gazel.description();
         gazel.startMovement();
         gazel.endMovement();
