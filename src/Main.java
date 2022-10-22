@@ -17,7 +17,7 @@ public class Main {
      //   one.poezd();
       //  two.poezd();
 
-        Avtobus one1 = new Avtobus("Марка 1", "Модель 15", "Красный", 2021, "Россия", 350);
+        Avtobus one1 = new Avtobus("Марка 1", "Модель 15", "Красный", 2021, "Россия", 350, BodyType.VAN);
         Avtobus two2 = new Avtobus("Марка 2", "Модель 3", "Желтый", 2020, "Китай", 150);
         Avtobus three3 = new Avtobus("Марка 3", "Модель 3","Зеленый", 2015, "Корея", 230);
         Avtobus four4 = new Avtobus("Марка 4", "Модель 4", "Фиолетовый", 2022, "Россия", 300);
@@ -27,19 +27,19 @@ public class Main {
         four4.bus();
 
 
-        PassengerCar cadilak = new PassengerCar("cadilak", "Модель cadilak", 40);
+        PassengerCar cadilak = new PassengerCar("cadilak", "Модель cadilak", 40, BodyType.SUV);
         cadilak.description();
         cadilak.endMovement();
         cadilak.startMovement();
-        PassengerCar chevrolet = new PassengerCar("chevrolet", "Модель chevrolet", 20);
+        PassengerCar chevrolet = new PassengerCar("chevrolet", "Модель chevrolet", 20, BodyType.MINIVAN);
         chevrolet.description();
         chevrolet.endMovement();
         chevrolet.startMovement();
-        PassengerCar hummer = new PassengerCar("hummer", "Модель hummer", 30);
+        PassengerCar hummer = new PassengerCar("hummer", "Модель hummer", 30, BodyType.COUPE);
         hummer.description();
         hummer.endMovement();
         hummer.startMovement();
-        PassengerCar ford = new PassengerCar("ford", "Модель ford", 10);
+        PassengerCar ford = new PassengerCar("ford", "Модель ford", 10, BodyType.STASION_WAGON);
         ford.description();
         ford.endMovement();
         ford.startMovement();
